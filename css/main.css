@@ -164,13 +164,25 @@ aside{
     padding: 5px 8px 5px 8px;
     cursor: pointer; 
 }
+.aside-btn{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 11px 20px 14px 20px;
+    color: #3C5858;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
 /* section css */
 .skids-card{
     margin-top: 40px;
     background-color: #F0F6F6;
     border-radius: 10px;
     width: 970px;
-    height: 570px;
+    /* height: 570px; */
     padding: 25px;
 }
 .skids-card__heading{
@@ -195,3 +207,61 @@ aside{
 .skids-type:nth-child(1){
     color: #3C5858;
 }
+
+.slider-container {
+    overflow: hidden;
+    position: relative;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .slide-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .slide-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .slide-content h3 {
+    margin-top: 15px;
+    font-size: 24px;
+  }
+  .nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #607282;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .prev { left: 10px; }
+  .next { right: 10px; }
+  .dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #BEDADA;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .dot.active {
+    background-color: #607282;
+  }
+  
