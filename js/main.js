@@ -38,3 +38,23 @@ function manualSlide(index) {
   showSlide(currentStep);
   resetInterval();
 }
+
+// acardion
+const accordionButtons = document.querySelectorAll('.accordion-button');
+accordionButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const activeButton = document.querySelector('.accordion-button.active');
+    if (activeButton && activeButton !== button) {
+      activeButton.classList.remove('active');
+      activeButton.nextElementSibling.style.maxHeight = '0';
+    }
+    const content = button.nextElementSibling;
+    if (button.classList.contains('active')) {
+      button.classList.remove('active');
+      content.style.maxHeight = '0';
+    } else {
+      button.classList.add('active');
+      content.style.maxHeight = content.scrollHeight + 'px';
+    }
+  });
+});

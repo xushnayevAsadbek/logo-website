@@ -294,4 +294,77 @@ aside{
     line-height: 50.6px;
     color: #023131;
     margin-top: 60px;
+    margin-bottom: 20px;
 }
+
+/* acardion */
+
+.accordion {
+    border-bottom: 1px solid #BEDADA;
+  }
+  
+  .accordion-item {
+    border-bottom: 1px solid #BEDADA;
+  }
+  
+  .accordion-button {
+    background-color: white;
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding-bottom: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    color: #3C5858;
+    border-bottom: 1px solid #BEDADA;
+
+  }
+  .accordion-button:hover{
+    cursor: pointer;
+    font-weight: 700;
+    color:#023131;
+  }
+  .accordion-button:after {
+    content: '+';
+    font-size: 38px;
+    color: #BEDADA;
+  }
+  .accordion-button:hover:after{
+    color: red;
+  }
+  
+  .accordion-button.active:after {
+    content: '×';
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 25px;
+    width: 750px;
+  }
+  .accordion-content h3{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    padding-top: 25px;
+  }
+  .accordion-content span{
+    color: red;
+  }
+  
+  .accordion-content p {
+    margin: 25px 0;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #3C5858;
+    padding-left: 100px;
+  }
+  
