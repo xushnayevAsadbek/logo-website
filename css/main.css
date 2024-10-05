@@ -127,7 +127,6 @@ aside{
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
-    align-items: center;
     margin-bottom: 15px;
 }
 .aside-box--card-text{
@@ -207,7 +206,6 @@ aside{
 .skids-type:nth-child(1){
     color: #3C5858;
 }
-
 .slider-container {
     overflow: hidden;
     position: relative;
@@ -322,7 +320,7 @@ aside{
     justify-content: space-between;
     color: #3C5858;
     border-bottom: 1px solid #BEDADA;
-
+    padding-top: 15px;
   }
   .accordion-button:hover{
     cursor: pointer;
@@ -346,7 +344,7 @@ aside{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    padding: 0 25px;
+    padding:  0 25px;
     width: 750px;
   }
   .accordion-content h3{
@@ -368,3 +366,110 @@ aside{
     padding-left: 100px;
   }
   
+  @media only screen and (max-width: 575.98px) {
+    .container{
+        width: 550px;
+    }
+    .header-top__des{
+        display: none
+    }
+    .header-logo{
+        font-size: 30px;
+        line-height: 34.5px;
+    }
+    /* .header-list{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding: 0 25px 0 15px;
+    } */
+    .header-list{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .aside-heading{
+        font-size: 40px;
+        line-height: 44px;
+    }
+   .aside-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+   }
+   .aside-type img{
+    width: 235px;
+    height: 135px;
+    object-fit: fill;
+   }
+   .aside-box{
+    padding: 12px;
+    border-right: 1px dashed #BEDADA;
+    border-left: 1px dashed #BEDADA;
+    border-bottom: 1px dashed #BEDADA;
+    height: 172px;
+}
+.aside-box__text{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+}
+.aside-box__heading{
+    font-size: 16px;
+    line-height: 20.8px;
+    width: 136px;
+    height: 41.6px;
+}
+.aside-box--card{
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.hidden-text-1{
+    width: 150px;
+}
+.aside-btn{
+    margin-top: 16px;
+    margin-left: 160px;
+}
+.skids-card{
+    margin-top: 60px;
+    width: auto;
+    padding: 25px;
+}
+.skids-card__heading{
+    font-size: 40px;
+    line-height: 44px;
+    padding-bottom: 24px;
+}
+.skids-list{
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.slide-mobil1{
+    display: none;
+}
+.wel-site--heading{
+    margin-top: 50px;
+  }
+.wel-site--info{
+    margin-bottom: 12px;
+}
+
+.site-about--text{
+    margin-top: 50px;
+}
+.accordion-content {
+    width: auto;
+    padding: 0;
+    /* margin-bottom: 40px; */
+  }
+  
+  .accordion-content p {
+    margin: 15px 0;
+    padding: 0 0 25px 0;
+  }
+  }
