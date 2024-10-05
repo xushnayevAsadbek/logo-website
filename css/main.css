@@ -116,6 +116,10 @@ aside{
     font-family: Montserrat;
     padding-bottom: 10px;
 }
+.aside-box__text:hover{
+    color: #FF2E4C;
+    cursor: pointer;
+}
 .aside-box__heading{
     font-size: 18px;
     font-weight: 700;
@@ -123,6 +127,10 @@ aside{
     color: #001C1C;
     width: 210px;
 }
+.aside-box__heading:hover{
+    color: #248888;
+    cursor: pointer;
+ }
 .aside-box--card{
     display: flex;
     justify-content: space-between;
@@ -134,6 +142,10 @@ aside{
     font-weight: 400;
     line-height: 19.6px;
     color:#607282;
+}
+.aside-box--card-text:hover{
+    cursor: pointer;
+    color:#FF2E4C;
 }
 .hidden-text-1{
     width: 203px;
@@ -422,6 +434,7 @@ aside{
     width: 136px;
     height: 41.6px;
 }
+
 .aside-box--card{
     flex-direction: column;
     margin-top: 5px;
