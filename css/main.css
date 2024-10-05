@@ -265,3 +265,33 @@ aside{
     background-color: #607282;
   }
   
+  
+  .wel-site--heading{
+    color: #023131;
+    font-size: 28px;
+    line-height: 32.4px;
+    font-weight: 700;
+    margin-top: 70px;
+    margin-bottom: 16px;
+  }
+.wel-site--text{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+.wel-site--info{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.5px;
+    color: #3C5858;
+    margin-bottom: 15px;
+}
+
+.site-about--text{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 50.6px;
+    color: #023131;
+    margin-top: 60px;
+}
